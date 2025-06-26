@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+  }
+  
+  nav {
+    position: sticky;
+    top: 0;
+    background-color: #07fffb;
+    z-index: 999;
+    padding: 10px 20px;
+    text-align: right;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #0077cc;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #005fa3;
+  }
+  
+
+  #home {
+    background-image: url('images/bg-home.jpg'); /* 🖼️ Your background image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 60px 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Optional dark overlay to improve text visibility */
+  #home::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+    z-index: 1;
+  }
+  
+  /* Make content appear above the overlay */
+  #home {
+    background-image: url('images/img1.jpg') ;/* 🖼️ Your background image path */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 60px 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #home > div {
+    position: relative;
+    z-index: 2;
+    color: white;
+  }
+  
+  #home h1 span {
+    font-weight: bold;
+    color: #ffc107; /* Optional: highlight name in yellow */
+  }
+  
+  /* Responsive text size for small screens */
+  @media (max-width: 768px) {
+    #home h1 {
+      font-size: 2rem;
+    }
+    #home p {
+      font-size: 1rem;
+    }
+  }
+  
+
+  #education .border:hover {
+  background-color: #f9f9f9;
+  transform: translateY(-3px);
+  transition: all 0.3s ease;
+}
+
+#skills {
+    margin-bottom: 60px;
+  }
+  /* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #eee;
+  }
+  
+  body.dark-mode a {
+    color: #80d0ff;
+  }
+  
+  body.dark-mode .progress-bar {
+    color: #fff;
+  }  
+  
+  section {
+    margin-bottom: 60px;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  .project-card {
+    background: #fff;
+    padding: 15px;
+    margin: 15px 0;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+  }
+  
+  .project-card img {
+    display: block;
+    margin-top: 10px;
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  #carouselLeaf .carousel-item img {
+    max-height: 300px;   /* adjust size as needed */
+    object-fit: contain; /* keeps image ratio */
+    margin: 0 auto;       /* centers the image */
+  }
+  
+
+  a {
+    color: #007acc;
+    text-decoration: none;
+  }
+
+/* Make sure the outer carousel is relatively positioned */
+#carouselHometown {
+  position: relative;
+  min-height: 400px; /* Optional: gives it some fixed height */
+}
+
+/* Sticky button position: always center of the carousel container */
+.custom-carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+}
+
+/* Style arrows inside */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+  background-size: 60% 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+#carouselHometown .carousel-item img {
+  max-height: 300px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  background-color: #f5f5f5; /* Optional padding look */
+  border-radius: 8px;
+}
+
+
+
+
+
+  
+  
+  #contact a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  #contact a:hover {
+    text-decoration: underline;
+  }
+  
+  #contact {
+    background-color: #f8f9fa;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  
